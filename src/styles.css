@@ -1,1 +1,47 @@
 /* You can add global styles to this file, and also import other style files */
+/* =========================
+   Custom Dropdown PrimeNG
+========================= */
+.custom-dropdown .p-dropdown {
+  width: 100%;
+  border-radius: 12px;
+  border: 2px solid #38b2ac;
+  padding: 6px 10px;
+  transition: all 0.3s ease;
+  font-size: 1rem;
+}
+
+.custom-dropdown .p-dropdown:hover {
+  border-color: #2c7a7b;
+  box-shadow: 0 0 10px rgba(56, 178, 172, 0.3);
+}
+
+.custom-dropdown .p-dropdown-label {
+  padding: 8px 12px;
+  font-weight: 500;
+  color: #333;
+}
+
+.custom-dropdown .p-dropdown-trigger {
+  color: #38b2ac;
+  font-size: 1.2rem;
+  margin-right: 6px;
+}
+
+/* ✅ قائمة العناصر */
+.custom-dropdown .p-dropdown-panel {
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+}
+
+.custom-dropdown .p-dropdown-item {
+  padding: 10px 14px;
+  font-size: 0.95rem;
+  transition: background 0.2s ease;
+}
+
+.custom-dropdown .p-dropdown-item:hover {
+  background: #e6fffa;
+  color: #2c7a7b;
+}

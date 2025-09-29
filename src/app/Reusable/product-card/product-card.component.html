@@ -1,0 +1,18 @@
+<div class="product-card" (click)="viewProductDetails(product.id)">
+  <!-- Product image -->
+  <div class="product-image">
+    <img [src]="product.thumbnail" alt="{{ product.title }}">
+  </div>
+
+  <!-- Product details -->
+  <div class="product-body">
+    <h5 class="product-title">{{ product.title }}</h5>
+    <p class="product-description text-truncate">{{ product.description }}</p>
+    <p class="product-price">${{ product.price }}</p>
+
+    <!-- Add to cart button -->
+    <button class="btn-add w-100" (click)="addToCart(product); $event.stopPropagation()">
+      Add to cart <i class="pi pi-shopping-cart"></i>
+    </button>
+  </div>
+</div>

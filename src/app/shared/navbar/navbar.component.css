@@ -1,0 +1,59 @@
+/* ===== Navbar Styles ===== */
+.navbar {
+  background: #fff;
+  border-bottom: 1px solid #eee;
+}
+
+/* Navbar brand */
+.navbar-brand {
+  font-weight: 600;
+  color: #2c7a7b !important;
+}
+
+/* Navbar links */
+.navbar-nav .nav-link {
+  color: #333 !important;
+  transition: color 0.3s ease;
+  margin: 0 20px;
+}
+.navbar-nav .nav-link:hover {
+  color: #2c7a7b !important;
+}
+
+/* Cart link flex to keep badge fixed */
+.cart-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;       /* space between text & badge */
+}
+
+/* Badge styling */
+.cart-link .badge {
+  font-size: 0.8rem;
+  border-radius: 12px;
+  padding: 4px 8px;
+  position: static;   /* no absolute positioning */
+}
+
+/* Remove container padding if needed */
+.navbar .container {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .navbar-brand {
+    font-size: 1.2rem;
+  }
+
+  .navbar-nav .nav-link {
+    font-size: 0.95rem;
+    margin: 0 10px;
+  }
+
+  .cart-link .badge {
+    font-size: 0.7rem;
+    padding: 3px 6px;
+  }
+}

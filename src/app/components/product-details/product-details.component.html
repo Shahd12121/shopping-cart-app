@@ -1,0 +1,26 @@
+<div class="mt-5 p-4" *ngIf="product">
+  <div class="product-details shadow-lg rounded-4 p-5 bg-white">
+    <div class="row align-items-center">
+
+      <!-- Product Image -->
+      <div class="col-md-5 text-center mb-4 mb-md-0">
+        <img [src]="product.thumbnail" 
+             alt="{{ product.title }}" 
+             class="img-fluid rounded-3 shadow-sm main-img">
+      </div>
+
+      <!-- Product Details -->
+      <div class="col-md-7">
+        <h2 class="product-title mb-3">{{ product.title }}</h2>
+        <p class="product-description text-muted">{{ product.description }}</p>
+        <h3 class="product-price text-success mb-4">${{ product.price }}</h3>
+
+        <!-- Add to Cart Button -->
+        <button class="btn-add w-100" (click)="addToCart(product)">
+          <i class="pi pi-shopping-cart me-2"></i> Add to Cart
+        </button>
+      </div>
+
+    </div>
+  </div>
+</div>

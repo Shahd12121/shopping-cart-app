@@ -1,0 +1,70 @@
+<div class="home-page">
+
+  <!-- ===== Hero Section ===== -->
+  <section class="hero d-flex justify-content-center align-items-center text-center">
+    <video autoplay muted loop class="hero-video">
+      <source src="/assets/videos/video1.mp4" type="video/mp4">
+    </video>
+    <div class="hero-overlay"></div>
+
+    <!-- Hero Text & Button -->
+    <div class="hero-content">
+      <h1 class="hero-title">Welcome to Our Store</h1>
+      <p class="hero-subtitle">Discover amazing deals and exclusive products</p>
+      <a class="btn bg-warning text-dark mt-3" routerLink="/products">Shop Now</a>
+    </div>
+  </section>
+
+  <!-- ===== Offers Carousel ===== -->
+  <section class="offers-carousel my-5">
+  <h2 class="carousel-main-title text-center mb-4">
+    Our Special Offers <i class="pi pi-star-fill ms-2 text-warning"></i>
+  </h2>
+
+  <div id="offersCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="1000">
+
+    <!-- Indicators -->
+    <div class="carousel-indicators">
+      <button *ngFor="let offer of offers; let i = index"
+              type="button"
+              [attr.data-bs-target]="'#offersCarousel'"
+              [attr.data-bs-slide-to]="i"
+              [class.active]="i === 0">
+      </button>
+    </div>
+
+    <!-- Slides -->
+    <div class="carousel-inner">
+      <div *ngFor="let offer of offers; let i = index" class="carousel-item" [class.active]="i === 0">
+        <img [src]="offer.img" class="d-block w-100 carousel-img" [alt]="offer.title" loading="lazy">
+        <div class="carousel-caption">
+          <h2>{{ offer.title }}</h2>
+          <p>{{ offer.subtitle }}</p>
+          <a class="btn bg-warning text-dark" [routerLink]="offer.link">Shop Now</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Controls -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#offersCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#offersCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+
+  </div>
+</section>
+
+
+  <!-- ===== Footer ===== -->
+  <footer class="footer mt-5 py-4 text-center">
+    <div class="container">
+      <p>All rights reserved &copy; 2025 Our Store.</p>
+      <p>
+        <a href="#" class="footer-link">Privacy Policy</a> |
+        <a href="#" class="footer-link">Terms of Service</a>
+      </p>
+    </div>
+  </footer>
+</div>

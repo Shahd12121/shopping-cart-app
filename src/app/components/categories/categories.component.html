@@ -1,0 +1,23 @@
+<!-- Categories dropdown -->
+<h2 class="section-title">Categories</h2>
+<p-dropdown 
+  [options]="categories" 
+  optionLabel="name" 
+  placeholder="Select Category"
+  (onChange)="loadCategory($event.value.slug)"
+  class="w-100 "
+></p-dropdown>
+
+<!-- Products list -->
+<div *ngIf="products.length > 0" class="products mt-4">
+  <h3 class="section-title mb-4">
+    Products in "{{ selectedCategory === 'all' ? 'All' : selectedCategory }}"
+  </h3>
+
+  <div class="row row-cols-1 row-cols-md-3 g-4">
+    <!-- Single product -->
+    <div class="col" *ngFor="let product of products">
+      <app-product-card [product]="product"></app-product-card>
+    </div>
+  </div>
+</div>

@@ -1,27 +1,34 @@
-# ShoppingCart
+# 🛒 Shopping Cart Project
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.17.
+## 📌 About the Project
+A simple shopping cart website where users can browse products, add them to the cart, and see the total price.  
+This project was built to practice working with APIs, components, and cart functionality.
 
-## Development server
+## 🚀 Technologies Used
+- HTML
+- CSS
+- Angular 
+- API for products data
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## 🔥 Features
+- Display products from API
+- Add / remove products from the cart
+- Calculate total price dynamically
+- Responsive design for mobile and desktop
 
-## Code scaffolding
+## 📂 How to Run the Project
+1. Clone the repository:
+   `bash
+   git clone https://github.com/username/shopping-cart.git
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+2. run ng serve.
 
-## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
 
-## Running unit tests
+📧 Contact
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+If you have any questions or feedback, feel free to contact me on:
 
-## Running end-to-end tests
+GitHub: [Your GitHub Link]
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+LinkedIn: [Your LinkedIn Link]

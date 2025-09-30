@@ -2,13 +2,12 @@
   "name": "shopping-cart",
   "version": "0.0.0",
   "scripts": {
-    "ng": "ng",
-    "start": "ng serve",
-    "build": "ng build",
-    "watch": "ng build --watch --configuration development",
-    "test": "ng test",
-    "serve:ssr:shopping-cart": "node dist/shopping-cart/server/server.mjs"
-  },
+   "ng": "ng",
+   "start": "ng serve",
+   "build": "ng build",
+   "deploy": "ng build --configuration production && npx gh-pages -d dist/shopping-cart"
+}
+,
   "private": true,
   "dependencies": {
     "@angular/animations": "^17.3.0",
@@ -38,6 +37,7 @@
     "@types/jasmine": "~5.1.0",
     "@types/node": "^18.18.0",
     "angular-cli-ghpages": "^2.0.3",
+    "gh-pages": "^6.3.0",
     "jasmine-core": "~5.1.0",
     "karma": "~6.4.0",
     "karma-chrome-launcher": "~3.2.0",

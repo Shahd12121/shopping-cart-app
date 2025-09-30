@@ -1,17 +1,23 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm sticky-top">
-  <div class="container">
+  <div class="container-fluid">
     <!-- Logo -->
-    <a class="navbar-brand fs-4" routerLink="/home">My Shop</a>
+    <a class="navbar-brand fs-3" routerLink="/home">My Shop</a>
 
     <!-- Toggle button (mobile) -->
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <button 
+      class="navbar-toggler" 
+      type="button" 
+      data-bs-toggle="collapse" 
+      data-bs-target="#navbarNav"
+      aria-controls="navbarNav" 
+      aria-expanded="false" 
+      aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
 
     <!-- Links -->
     <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav mx-auto text-center">
+      <ul class="navbar-nav ms-auto text-center">
         <li class="nav-item">
           <a class="nav-link fs-5" routerLink="/home">Home</a>
         </li>
@@ -19,8 +25,8 @@
           <a class="nav-link fs-5" routerLink="/products">Products</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link fs-5 position-relative" routerLink="/cart">
-            Cart 
+          <a class="nav-link fs-5 cart-link" routerLink="/cart">
+            Cart
             <span class="badge bg-warning text-dark">{{ cartCount }}</span>
           </a>
         </li>

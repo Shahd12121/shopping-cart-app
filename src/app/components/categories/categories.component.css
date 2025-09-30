@@ -19,7 +19,7 @@
 }
 
 /* =========================
-   Dropdown
+   Dropdown (PrimeNG)
 ========================= */
 .p-dropdown {
   width: 100% !important;
@@ -60,15 +60,14 @@
 ========================= */
 .products-container {
   width: 100%;
-  padding: 0 12px; /* padding صغير بدل container */
+  padding: 0 20px;
 }
 
 /* =========================
    Product Card
 ========================= */
 .product-card {
-  width: 100%; /* يشغل كل مساحة العمود */
-  max-width: 100%;
+  width: 100%;
   min-height: 380px;
   background: #fff;
   border-radius: 16px;
@@ -85,14 +84,14 @@
   box-shadow: 0 8px 22px rgba(0,0,0,0.12);
 }
 
-/* صورة المنتج */
+/* Product Image */
 .product-image {
-  overflow: hidden;
-  height: 240px; /* أكبر شوية */
+  height: 240px;
   display: flex;
   justify-content: center;
   align-items: center;
   background: #fafafa;
+  overflow: hidden;
 }
 .product-image img {
   max-height: 100%;
@@ -103,7 +102,7 @@
   transform: scale(1.08);
 }
 
-/* تفاصيل المنتج */
+/* Product Body */
 .product-body {
   padding: 20px;
   display: flex;
@@ -128,7 +127,7 @@
   margin-bottom: 14px;
 }
 
-/* زر Add to cart */
+/* Add to Cart Button */
 .btn-add {
   background: linear-gradient(135deg, #38b2ac, #319795);
   color: #fff;

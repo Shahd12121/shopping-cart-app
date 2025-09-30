@@ -184,5 +184,5 @@
   .carousel-img{height:55vh;}
   .carousel-caption{top:20%; transform:translate(-50%,0);}
   .carousel-caption h2{font-size:1.2rem; font-weight:600;}
-  .carousel-btn{font-size:0.8rem; padding:4px 12px;}
+  .carousel-btn{font-size:0.3rem; padding:4px 15px;}
 }

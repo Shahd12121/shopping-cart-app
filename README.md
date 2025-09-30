@@ -19,7 +19,7 @@ This project was built to practice working with APIs, components, and cart funct
 ## 📂 How to Run the Project
 1. Clone the repository:
    `bash
-   git clone https://github.com/username/shopping-cart.git
+   git clone https://github.com/Shahd12121/shopping-cart-app.git
 
 2. run ng serve.
 
